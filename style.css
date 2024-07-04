@@ -1,0 +1,97 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  animation: blinking 5s infinite;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.in {
+  text-align: center;
+}
+
+input {
+  border-style: solid;
+  border-color: #E0B317;
+  
+}
+
+#luu_y {
+  text-align: center;
+}
+
+.thong_bao {
+  color: red;
+}
+
+.time {
+  text-align:right;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes blinking {
+  0% { color: red; }
+  25% { color: orange; }
+  50% { color: blue; }
+  75% { color: green; }
+  100% { color: rgba(212, 24, 24, 1); }
+}
+
+
+  
+
+
+
+
+.container {
+    max-width: 600px;  /* Điều chỉnh chiều rộng container theo ý bạn */
+    margin: 0 auto;
+}
+
+.animated-text {
+    display: inline-block;
+    
+    overflow: hidden;
+    border-right: 2px solid;
+    animation: typing 2s steps(30, end), blink-caret .50s step-end infinite;
+    /*font-family: 'Courier New', Courier, monospace;*/
+    font-size: 20px;
+    margin: 10px 0;
+    opacity: 0;
+    white-space: pre-wrap;  /* Cho phép xuống dòng */
+    word-break: break-word;  /* Cho phép ngắt từ */
+
+}
+
+@keyframes typing {
+    from { 
+        width: 0;
+    }
+    to { 
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to { 
+        border-color: transparent;
+    }
+    50% { 
+        border-color: black;
+    }
+}
+
+
+
+
+
