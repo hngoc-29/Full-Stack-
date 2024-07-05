@@ -20,7 +20,6 @@ h2 {
 input {
   border-style: solid;
   border-color: #E0B317;
-  
 }
 
 #luu_y {
@@ -32,7 +31,7 @@ input {
 }
 
 .time {
-  text-align:right;
+  text-align: right;
 }
 
 .hidden {
@@ -47,15 +46,9 @@ input {
   100% { color: rgba(212, 24, 24, 1); }
 }
 
-
-  
-
-
-
-
-.container {
-    max-width: 600px;  /* Điều chỉnh chiều rộng container theo ý bạn */
-    margin: 0 auto;
+.show_time {
+  display: flex;
+  margin-left: 150px;
 }
 
 .animated-text {
@@ -63,14 +56,13 @@ input {
     
     overflow: hidden;
     border-right: 2px solid;
-    animation: typing 2s steps(30, end), blink-caret .50s step-end infinite;
+    animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
     /*font-family: 'Courier New', Courier, monospace;*/
     font-size: 20px;
     margin: 10px 0;
     opacity: 0;
     white-space: pre-wrap;  /* Cho phép xuống dòng */
-    word-break: break-word;  /* Cho phép ngắt từ */
-
+    word-break: break-word;  
 }
 
 @keyframes typing {
@@ -90,8 +82,4 @@ input {
         border-color: black;
     }
 }
-
-
-
-
 
